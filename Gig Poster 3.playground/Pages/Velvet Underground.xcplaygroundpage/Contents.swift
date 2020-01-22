@@ -31,8 +31,13 @@ let purple = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
 let offWhite = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
 
 // Begin your solution here...
-
-
+// make background
+canvas.fillColor = black
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 4000, height: 5000)
+//make all the text
+canvas.textColor = offWhite
+canvas.drawText(message: "the velvet underground", at: Point(x: 15, y: 425), size: 30, kerning: 0.0)
+canvas.drawText(message: "first appearance in london", at: Point(x: 15, y: 550), size: 10, kerning: 0.0)
 /*:
  ## Use Source Control
  
