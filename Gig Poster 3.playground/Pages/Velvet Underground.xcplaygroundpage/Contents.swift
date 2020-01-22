@@ -36,22 +36,41 @@ canvas.fillColor = black
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 4000, height: 5000)
 //make all the text
 canvas.textColor = offWhite
-canvas.drawText(message: "the velvet underground", at: Point(x: 15, y: 425), size: 30, kerning: 0.0)
-canvas.drawText(message: "first appearance in london", at: Point(x: 15, y: 550), size: 7, kerning: 0.0)
-canvas.drawText(message: "the london college of printing", at: Point(x: 15, y: 540), size: 7, kerning: 0.0)
-canvas.drawText(message: "with spring and pollyfloskin", at: Point(x: 150, y: 550), size: 7, kerning: 0.0)
-canvas.drawText(message: "plus the great western lights show", at: Point(x: 150, y: 540), size: 7, kerning: 0.0)
-canvas.drawText(message: "thursday", at: Point(x: 300, y: 550), size: 7, kerning: 0.0)
-canvas.drawText(message: "october 14 1971 /8pm", at: Point(x: 300, y: 540), size: 7, kerning: 0.0)
+canvas.drawText(message: "the velvet underground", at: Point(x: 10, y: 425), size: 30, kerning: 0.0)
+canvas.drawText(message: "first appearance in london", at: Point(x: 10, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "the london college of printing", at: Point(x: 10, y: 540), size: 7, kerning: 0.0)
+canvas.drawText(message: "with spring and pollyfloskin", at: Point(x: 145, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "plus the great western lights show", at: Point(x: 145, y: 540), size: 7, kerning: 0.0)
+canvas.drawText(message: "thursday", at: Point(x: 295, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "october 14 1971 /8pm", at: Point(x: 295, y: 540), size: 7, kerning: 0.0)
 //time to do the lines
 canvas.lineColor = offWhite
 canvas.drawLine(from: Point(x: 0, y: 470), to: Point(x: 400, y: 470))
 canvas.drawLine(from: Point(x: 0, y: 570), to: Point(x: 400, y: 570))
 // ok time to do some rectangles
 canvas.fillColor = purple
-for y in stride(from: 325, through: 125, by: 90) {
-    for x in stride(from: 0, through: 300, by: 90) {
-canvas.drawRectangle(at: Point(x: x, y: y), width: 72, height: 20)
+canvas.lineColor = purple
+for y in stride(from: 0, through: 380, by: 80) {
+    for x in stride(from: 0, through: 400, by: 80) {
+canvas.drawRectangle(at: Point(x: x, y: y), width: 60, height: 20)
+        canvas.drawShapesWithBorders = false
+canvas.drawRectangle(at: Point(x: x, y: y ), width: 20, height: 60)
+        
+canvas.defaultLineWidth = 20
+        canvas.drawLine(from: Point(x: x + 20, y: y + 20), to: Point(x: x + 60, y: y + 60))
+        
+        
+        // White Arrow
+       
+    }
+}
+canvas.fillColor = offWhite
+canvas.defaultLineWidth = 20
+canvas.drawLine(from: Point(x: 0, y: 0), to: Point(x: 60, y: 60))
+canvas.drawRectangle(at: Point(x: 320, y: 320 ), width: 20, height: 60)
+canvas.drawRectangle(at: Point(x: 320, y: 320 ), width: 60, height: 20)
+
+
 /*:
  ## Use Source Control
  
@@ -62,5 +81,4 @@ canvas.drawRectangle(at: Point(x: x, y: y), width: 72, height: 20)
  */
 PlaygroundPage.current.liveView = canvas
 
-}
-}
+
