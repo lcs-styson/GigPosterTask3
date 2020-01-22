@@ -66,11 +66,22 @@ canvas.defaultLineWidth = 20
 }
 canvas.fillColor = offWhite
 canvas.defaultLineWidth = 20
+canvas.lineColor = offWhite
 canvas.drawLine(from: Point(x: 0, y: 0), to: Point(x: 60, y: 60))
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 60, height: 20)
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 20, height: 60)
+canvas.drawRectangle(at: Point(x: 80, y: 80 ), width: 60, height: 20)
+canvas.drawRectangle(at: Point(x: 80, y: 80 ), width: 20, height: 60)
+canvas.drawLine(from: Point(x: 100, y: 100), to: Point(x: 140, y: 140))
+canvas.drawRectangle(at: Point(x: 160, y: 160 ), width: 20, height: 60)
+canvas.drawRectangle(at: Point(x: 160, y: 160 ), width: 60, height: 20)
+canvas.drawLine(from: Point(x: 180, y: 180), to: Point(x: 220, y: 220))
+canvas.drawRectangle(at: Point(x: 240, y: 240 ), width: 60, height: 20)
+canvas.drawRectangle(at: Point(x: 240, y: 240 ), width: 20, height: 60)
+canvas.drawLine(from: Point(x: 260, y: 260), to: Point(x: 300, y: 300))
 canvas.drawRectangle(at: Point(x: 320, y: 320 ), width: 20, height: 60)
 canvas.drawRectangle(at: Point(x: 320, y: 320 ), width: 60, height: 20)
-
-
+canvas.drawLine(from: Point(x: 340, y: 340), to: Point(x: 380, y: 380))
 /*:
  ## Use Source Control
  
