@@ -43,6 +43,10 @@ canvas.drawText(message: "with spring and pollyfloskin", at: Point(x: 150, y: 55
 canvas.drawText(message: "plus the great western lights show", at: Point(x: 150, y: 540), size: 7, kerning: 0.0)
 canvas.drawText(message: "thursday", at: Point(x: 300, y: 550), size: 7, kerning: 0.0)
 canvas.drawText(message: "october 14 1971 /8pm", at: Point(x: 300, y: 540), size: 7, kerning: 0.0)
+//time to do the lines
+canvas.lineColor = offWhite
+canvas.drawLine(from: Point(x: 0, y: 470), to: Point(x: 400, y: 470))
+canvas.drawLine(from: Point(x: 0, y: 570), to: Point(x: 400, y: 570))
 /*:
  ## Use Source Control
  
