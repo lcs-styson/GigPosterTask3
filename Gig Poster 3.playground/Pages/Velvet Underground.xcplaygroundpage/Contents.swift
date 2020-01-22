@@ -37,7 +37,12 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 4000, height: 5000)
 //make all the text
 canvas.textColor = offWhite
 canvas.drawText(message: "the velvet underground", at: Point(x: 15, y: 425), size: 30, kerning: 0.0)
-canvas.drawText(message: "first appearance in london", at: Point(x: 15, y: 550), size: 10, kerning: 0.0)
+canvas.drawText(message: "first appearance in london", at: Point(x: 15, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "the london college of printing", at: Point(x: 15, y: 540), size: 7, kerning: 0.0)
+canvas.drawText(message: "with spring and pollyfloskin", at: Point(x: 150, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "plus the great western lights show", at: Point(x: 150, y: 540), size: 7, kerning: 0.0)
+canvas.drawText(message: "thursday", at: Point(x: 300, y: 550), size: 7, kerning: 0.0)
+canvas.drawText(message: "october 14 1971 /8pm", at: Point(x: 300, y: 540), size: 7, kerning: 0.0)
 /*:
  ## Use Source Control
  
