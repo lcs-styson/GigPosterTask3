@@ -47,6 +47,11 @@ canvas.drawText(message: "october 14 1971 /8pm", at: Point(x: 300, y: 540), size
 canvas.lineColor = offWhite
 canvas.drawLine(from: Point(x: 0, y: 470), to: Point(x: 400, y: 470))
 canvas.drawLine(from: Point(x: 0, y: 570), to: Point(x: 400, y: 570))
+// ok time to do some rectangles
+canvas.fillColor = purple
+for y in stride(from: 325, through: 125, by: 90) {
+    for x in stride(from: 0, through: 300, by: 90) {
+canvas.drawRectangle(at: Point(x: x, y: y), width: 72, height: 20)
 /*:
  ## Use Source Control
  
@@ -57,3 +62,5 @@ canvas.drawLine(from: Point(x: 0, y: 570), to: Point(x: 400, y: 570))
  */
 PlaygroundPage.current.liveView = canvas
 
+}
+}
